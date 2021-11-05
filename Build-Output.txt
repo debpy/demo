@@ -1,0 +1,190 @@
+Started by user Debojyoti Bose
+Running as SYSTEM
+Building in workspace C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo
+The recommended git tool is: NONE
+No credentials specified
+ > C:\Program Files\Git\bin\git.exe rev-parse --resolve-git-dir C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\.git # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/doct15/example-tomcat-war # timeout=10
+Fetching upstream changes from https://github.com/doct15/example-tomcat-war
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > git --version # 'git version 2.33.1.windows.1'
+ > C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/doct15/example-tomcat-war +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 28e3f73367d66120359b54490f71c2adb67748b8 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 28e3f73367d66120359b54490f71c2adb67748b8 # timeout=10
+Commit message: "Update distelli-manifest.yml"
+ > C:\Program Files\Git\bin\git.exe rev-list --no-walk 28e3f73367d66120359b54490f71c2adb67748b8 # timeout=10
+Parsing POMs
+Modules changed, recalculating dependency graph
+Established TCP socket on 63284
+[demo] $ "C:\Program Files\Java\jdk-11.0.12/bin/java" -cp C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven3/conf/logging jenkins.maven3.agent.Maven35Main C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\maven3 C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\war\WEB-INF\lib\remoting-4.10.jar C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 63284
+<===[JENKINS REMOTING CAPACITY]===>channel started
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3/lib/maven-slf4j-provider-3.8.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/cache/artifactory-plugin/3.13.2/slf4j-simple-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.MavenSimpleLoggerFactory]
+Executing Maven:  -B -f C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\pom.xml clean compile package sonar:sonar -Dsonar.projectKey=sonar-debojyoti -Dsonar.login=dd62e0c33f35b685f52a95e7323f76cacccf8cf1
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3/lib/maven-slf4j-provider-3.8.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/cache/artifactory-plugin/3.13.2/slf4j-simple-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.MavenSimpleLoggerFactory]
+[INFO] Scanning for projects...
+[INFO] Initializing Artifactory Build-Info Recording
+[HUDSON] Collecting dependencies info
+[WARNING] The artifact org.codehaus.mojo:sonar-maven-plugin:jar:3.9.0.2155 has been relocated to org.sonarsource.scanner.maven:sonar-maven-plugin:jar:3.9.0.2155: SonarQube plugin was moved to SonarSource organisation
+[INFO] 
+[INFO] -----------------< com.example.app:SimpleTomcatWebApp >-----------------
+[INFO] Building SimpleTomcatWebApp Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ SimpleTomcatWebApp ---
+[INFO] Deleting C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SimpleTomcatWebApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ SimpleTomcatWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SimpleTomcatWebApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ SimpleTomcatWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ SimpleTomcatWebApp ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ SimpleTomcatWebApp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ SimpleTomcatWebApp ---
+[INFO] No tests to run.
+[JENKINS] Recording test results
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ SimpleTomcatWebApp ---
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Windows/system32/config/systemprofile/.m2/repository/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar) to field java.util.Properties.defaults
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Packaging webapp
+[INFO] Assembling webapp [SimpleTomcatWebApp] in [C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target\SimpleTomcatWebApp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\src\main\webapp]
+[INFO] Webapp assembled in [49 msecs]
+[INFO] Building war: C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target\SimpleTomcatWebApp.war
+[INFO] WEB-INF\web.xml already added, skipping
+[WARNING] Attempt to (de-)serialize anonymous class org.jfrog.hudson.maven2.MavenDependenciesRecorder$1; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+[INFO] 
+[INFO] -----------------< com.example.app:SimpleTomcatWebApp >-----------------
+[INFO] Building SimpleTomcatWebApp Maven Webapp 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.9.0.2155:sonar (default-cli) @ SimpleTomcatWebApp ---
+[INFO] User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+[INFO] SonarQube version: 9.1.0
+[INFO] Default locale: "en_IN", source code encoding: "windows-1252" (analysis is platform dependent)
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=172ms
+[INFO] Server id: BF41A1F2-AXy8ixDEkBO92CjgFQNE
+[INFO] User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+[INFO] Load/download plugins
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=85ms
+[INFO] Load/download plugins (done) | time=193ms
+[INFO] Process project properties
+[INFO] Process project properties (done) | time=34ms
+[INFO] Execute project builders
+[INFO] Execute project builders (done) | time=2ms
+[INFO] Project key: sonar-debojyoti
+[INFO] Base dir: C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo
+[INFO] Working dir: C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target\sonar
+[INFO] Load project settings for component key: 'sonar-debojyoti'
+[INFO] Load project settings for component key: 'sonar-debojyoti' (done) | time=17ms
+[INFO] Auto-configuring with CI 'Jenkins'
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=95ms
+[INFO] Auto-configuring with CI 'Jenkins'
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=2419ms
+[INFO] Indexing files...
+[INFO] Project configuration:
+[INFO] 4 files indexed
+[INFO] 0 files ignored because of scm ignore settings
+[INFO] Quality profile for jsp: Sonar way
+[INFO] Quality profile for xml: Sonar way
+[INFO] ------------- Run sensors on module SimpleTomcatWebApp Maven Webapp
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=29ms
+[INFO] Sensor CSS Rules [cssfamily]
+[INFO] No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+[INFO] Sensor CSS Rules [cssfamily] (done) | time=2ms
+[INFO] Sensor JaCoCo XML Report Importer [jacoco]
+[INFO] 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+[INFO] No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+[INFO] Sensor JaCoCo XML Report Importer [jacoco] (done) | time=5ms
+[INFO] Sensor C# Project Type Information [csharp]
+[INFO] Sensor C# Project Type Information [csharp] (done) | time=1ms
+[INFO] Sensor C# Analysis Log [csharp]
+[INFO] Sensor C# Analysis Log [csharp] (done) | time=23ms
+[INFO] Sensor C# Properties [csharp]
+[INFO] Sensor C# Properties [csharp] (done) | time=0ms
+[INFO] Sensor JavaXmlSensor [java]
+[INFO] 2 source files to be analyzed
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=27ms
+[INFO] 2/2 source files have been analyzed
+[INFO] Sensor JavaXmlSensor [java] (done) | time=345ms
+[INFO] Sensor HTML [web]
+[INFO] Sensor HTML [web] (done) | time=439ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 2 source files to be analyzed
+[INFO] 2/2 source files have been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=270ms
+[INFO] Sensor VB.NET Project Type Information [vbnet]
+[INFO] Sensor VB.NET Project Type Information [vbnet] (done) | time=1ms
+[INFO] Sensor VB.NET Analysis Log [vbnet]
+[INFO] Sensor VB.NET Analysis Log [vbnet] (done) | time=20ms
+[INFO] Sensor VB.NET Properties [vbnet]
+[INFO] Sensor VB.NET Properties [vbnet] (done) | time=0ms
+[INFO] ------------- Run sensors on project
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=1ms
+[INFO] CPD Executor 1 file had no CPD blocks
+[INFO] CPD Executor Calculating CPD for 0 files
+[INFO] CPD Executor CPD calculation finished (done) | time=0ms
+[INFO] Analysis report generated in 96ms, dir size=105.2 kB
+[INFO] Analysis report compressed in 68ms, zip size=16.1 kB
+[INFO] Analysis report uploaded in 56ms
+[INFO] ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard?id=sonar-debojyoti
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://localhost:9000/api/ce/task?id=AXzrMV3y6X1L3R-yVRoU
+[INFO] Analysis total time: 6.791 s
+[INFO] Artifactory Build Info Recorder: Saving Build Info to 'C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target\build-info.json'
+[INFO] Deploying artifact: http://localhost:8081/artifactory/debo-jfrog/com/example/app/SimpleTomcatWebApp/1.0-SNAPSHOT/SimpleTomcatWebApp-1.0-SNAPSHOT.war
+[INFO] Artifactory Build Info Recorder: Deploying build info ...
+[INFO] Deploying build info...
+[INFO] Build successfully deployed. Browse it in Artifactory under http://localhost:8081/artifactory/webapp/builds/demo/15
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.869 s
+[INFO] Finished at: 2021-11-04T19:14:14+05:30
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\pom.xml to com.example.app/SimpleTomcatWebApp/1.0-SNAPSHOT/SimpleTomcatWebApp-1.0-SNAPSHOT.pom
+[JENKINS] Archiving C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target\SimpleTomcatWebApp.war to com.example.app/SimpleTomcatWebApp/1.0-SNAPSHOT/SimpleTomcatWebApp-1.0-SNAPSHOT.war
+channel stopped
+[DeployPublisher][INFO] Attempting to deploy 1 war file(s)
+[DeployPublisher][INFO] Deploying C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target\SimpleTomcatWebApp.war to container Tomcat 9.x Remote with context example-tomcat-war
+  [C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target\SimpleTomcatWebApp.war] is not deployed. Doing a fresh deployment.
+  Deploying [C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\demo\target\SimpleTomcatWebApp.war]
+Finished: SUCCESS
